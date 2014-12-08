@@ -3,7 +3,7 @@ runtime! lib/NeoBundle.before.vim
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundleFetch 'Shougo/neobundle.vim', 'master'
 
 NeoBundle 'Shougo/vimproc.vim', {
       \   'build' : {
