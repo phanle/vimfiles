@@ -59,7 +59,6 @@ NeoBundle 'luan/vipe', {
 
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'milkypostman/vim-togglelist'
-NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'maxbrunsfeld/vim-emacs-bindings'
 NeoBundle 'mbbill/undotree'
 
@@ -82,13 +81,9 @@ NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'lucapette/vim-textobj-underscore'
 NeoBundle 'nelstrom/vim-textobj-rubyblock'
 
-" Snippets
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
-
 " Language Additions
-NeoBundle 'oblitum/rainbow'
 NeoBundle 'tpope/vim-projectionist'
+
 " Ruby
 NeoBundleLazy 'vim-ruby/vim-ruby', {'autoload': {'filetypes': ['ruby', 'rake']}}
 NeoBundleLazy 'tpope/vim-rails', {'autoload': {'filetypes': ['ruby', 'rake']}}

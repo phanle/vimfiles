@@ -80,3 +80,14 @@ set mousehide  " Hide mouse after chars typed
 set mouse=a  " Mouse in all modes
 " }}}
 
+set list                        " Show whitespace
+set listchars=trail:·
+
+set notimeout                   " No command timeout
+set showcmd                     " Show typed command prefixes while waiting for operator
+
+set splitright                  " Add new windows towards the right
+set splitbelow                  " ... and bottom
+
+set history=1024                " History size
+set scrolloff=3                 " Scroll when the cursor is 3 lines from edge
