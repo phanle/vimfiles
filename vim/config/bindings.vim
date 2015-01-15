@@ -34,10 +34,6 @@ command! Q q
 command! WQ wq
 command! Wq wq
 
-" reselect visual block after indent
-vnoremap < <gv
-vnoremap > >gv
-
 " make Y consistent with C and D. See :help Y.
 nnoremap Y y$
 
