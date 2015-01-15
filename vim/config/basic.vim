@@ -29,6 +29,7 @@ set lazyredraw
 if exists('+colorcolumn')
   set colorcolumn=80 " Color the 80th column differently
 endif
+au VimResized * exe "normal! \<c-w>="
 " }}}
 
 " Behaviors {{{
