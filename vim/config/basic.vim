@@ -41,6 +41,7 @@ set foldmethod=syntax
 set foldlevel=20
 set formatoptions=crql
 set tags=./tags;/,tags;/
+nnoremap K <nop>           " disable man page search for word under cursor
 " }}}
 
 " Text Format {{{
