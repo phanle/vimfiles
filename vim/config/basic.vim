@@ -16,7 +16,7 @@ set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 " }}}
 
 " UI {{{
-set nu             " Line numbers on
+set number         " Line numbers on
 set nowrap         " Line wrapping off
 set cmdheight=2    " Make the command area two lines high
 set numberwidth=5
