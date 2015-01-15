@@ -25,7 +25,6 @@ NeoBundle 'tpope/vim-sensible'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'FelikZ/ctrlp-py-matcher'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'majutsushi/tagbar'
 
 " UI Additions
 " colorschemes
@@ -50,17 +49,9 @@ NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'godlygeek/tabular'
 NeoBundleLazy 'mileszs/ack.vim', {'autoload':{'commands':'Ack'}}
 NeoBundleLazy 'rking/ag.vim', {'autoload':{'commands':'Ag'}}
-NeoBundle 'luan/vipe', {
-  \   'build': {
-  \     'mac': 'ln -s `pwd`/vipe /usr/local/bin || echo',
-  \     'unix': 'ln -s `pwd`/vipe ~/bin || echo',
-  \    },
-  \ }
 
+" Syntax
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'milkypostman/vim-togglelist'
-NeoBundle 'maxbrunsfeld/vim-emacs-bindings'
-NeoBundle 'mbbill/undotree'
 
 " Automatic Helpers
 NeoBundle 'tpope/vim-endwise'
@@ -73,7 +64,6 @@ if !(has('lua') && (v:version > 703 || v:version == 703 && has('patch885')))
 else
   NeoBundle 'Shougo/neocomplete.vim'
 endif
-NeoBundle 'Shougo/echodoc.vim'
 
 " MatchIt
 NeoBundle 'matchit.zip'
@@ -91,24 +81,28 @@ NeoBundleLazy 'tpope/vim-rake', {'autoload': {'filetypes': ['ruby', 'rake']}}
 NeoBundleLazy 'tpope/vim-cucumber', {'autoload': {'filetypes': ['cucumber']}}
 NeoBundleLazy 'tpope/vim-bundler', {'autoload': {'filetypes': ['ruby', 'rake']}}
 NeoBundleLazy 'ecomba/vim-ruby-refactoring', {'autoload': {'filetypes': ['ruby', 'rake']}}
+
 " Clojure
 NeoBundleLazy 'guns/vim-clojure-static', {'autoload': {'filetypes': ['clojure']}}
 NeoBundleLazy 'tpope/vim-fireplace', {'autoload': {'filetypes': ['clojure']}}
+
 " Scala
 NeoBundleLazy 'derekwyatt/vim-scala', {'autoload': {'filetypes': ['scala']}}
+
 " Go
 NeoBundleLazy 'fatih/vim-go', {'autoload': {'filetypes': ['go']}}
+
 " Docker
 NeoBundle 'honza/dockerfile.vim'
 
-"   JavaScript
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'mxw/vim-jsx'
+" JavaScript
+NeoBundleLazy 'pangloss/vim-javascript'
+NeoBundleLazy 'mxw/vim-jsx'
 NeoBundleLazy 'maksimr/vim-jsbeautify', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'kchmck/vim-coffee-script', {'autoload':{'filetypes':['coffee']}}
 NeoBundleLazy 'leshill/vim-json', {'autoload':{'filetypes':['javascript','json']}}
 
-"   CSS / HTML
+" CSS / HTML
 NeoBundleLazy 'mattn/emmet-vim', {'autoload':{'filetypes':['html','css']}}
 NeoBundleLazy 'tpope/vim-haml', {'autoload':{'filetypes':['haml']}}
 NeoBundleLazy 'nono/vim-handlebars', {'autoload':{'filetypes':['handlebars']}}
@@ -118,7 +112,8 @@ NeoBundleLazy 'othree/html5.vim', {'autoload':{'filetypes':['html']}}
 NeoBundleLazy 'juvenn/mustache.vim', {'autoload':{'filetypes':['mustache']}}
 NeoBundleLazy 'gregsexton/MatchTag', {'autoload':{'filetypes':['html','xml']}}
 
-NeoBundle 'syngan/vim-vimlint', { 'depends' : 'ynkdir/vim-vimlparser'}
+" QuickFix tools
+NeoBundle 'peeja/vim-cdo'
 
 call neobundle#end()
 
