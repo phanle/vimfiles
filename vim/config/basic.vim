@@ -55,6 +55,7 @@ set expandtab
 set ignorecase
 set smartcase  " Non-case sensitive search
 set hlsearch
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>"" " Press Space to turn off highlighting and clear any message already displayed.
 set wildignore+=*/tmp/*,*/node_modules/*,*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,.sass-cache,*.class,*.scssc,*/Godeps/*
 if executable('ack')
   set grepprg=ack\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow\ $*
@@ -69,6 +70,10 @@ endif
 " Visual {{{
 set showmatch   " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
+
+if has("gui_running")
+  set noballooneval
+endif
 " }}}
 
 " Sounds {{{
@@ -92,3 +97,7 @@ set splitbelow                  " ... and bottom
 
 set history=1024                " History size
 set scrolloff=3                 " Scroll when the cursor is 3 lines from edge
+
+" Write all writeable buffers when changing buffers or losing focus.
+set autowriteall                " Save when doing various buffer-switching things.
+autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
