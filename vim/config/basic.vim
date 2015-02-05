@@ -47,7 +47,7 @@ nnoremap K <nop>           " disable man page search for word under cursor
 " Text Format {{{
 set tabstop=2
 set shiftwidth=2 " Tabs under smart indent
-set cindent
+set nocindent
 set expandtab
 " }}}
 
