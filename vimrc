@@ -33,8 +33,6 @@ runtime! config/plugin/omnicompletion.vim
 runtime! config/plugin/rainbow.vim
 runtime! config/plugin/signify.vim
 runtime! config/plugin/tagbar.vim
-runtime! config/plugin/tmux-navigator.vim
-runtime! config/plugin/undotree.vim
 
 " ----------------------------------------
 " Lib load path
