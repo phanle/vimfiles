@@ -28,7 +28,6 @@ runtime! config/plugin/echodoc.vim
 runtime! config/plugin/fugitive.vim
 runtime! config/plugin/golang.vim
 runtime! config/plugin/omnicompletion.vim
-runtime! config/plugin/rainbow.vim
 runtime! config/plugin/signify.vim
 runtime! config/plugin/tagbar.vim
 
