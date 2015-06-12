@@ -4,3 +4,9 @@
 [submodule "vim/scripts/shell-colors-vim-hybrid"]
 	path = vim/scripts/shell-colors-vim-hybrid
 	url = https://gist.github.com/0d27cb34e81af344d742.git
+[submodule "vim/vim-github-colorscheme"]
+	path = vim/vim-github-colorscheme
+	url = https://github.com/krishicks/vim-github-colorscheme.git
+[submodule "vim/bundle/vim-github-colorscheme"]
+	path = vim/bundle/vim-github-colorscheme
+	url = https://github.com/krishicks/vim-github-colorscheme.git

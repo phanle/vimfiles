@@ -30,6 +30,7 @@ NeoBundle 'scrooloose/nerdtree'
 " colorschemes
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'krishicks/vim-github-colorscheme'
 
 NeoBundle 'bling/vim-airline'
 NeoBundle 'kshenoy/vim-signature'
