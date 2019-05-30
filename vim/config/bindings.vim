@@ -10,6 +10,9 @@ map <F6> :set invpaste<CR>:set paste?<CR>
 
 nnoremap j gj
 nnoremap k gk
+:imap jk <Esc>
+:imap jj <Esc>
+:imap kj <Esc>
 
 " Fast scrolling
 nnoremap <C-e>  3<C-e>
@@ -24,6 +27,9 @@ map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
 map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
 
 " AckGrep current word
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 map <leader>a :call AckGrep()<CR>
 " AckVisual current selection
 vmap <leader>a :call AckVisual()<CR>
@@ -70,3 +76,7 @@ map <leader>t :call RunTestFile()<cr>
 " Run only the example under the cursor
 map <leader>T :call RunNearestTest()<cr>
 " }}}
+:imap <C-h> <Left>
+:imap <C-j> <Down>
+:imap <C-k> <Up>
+:imap <C-l> <Right>
