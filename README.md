@@ -4,7 +4,7 @@ If you're trying to use this config checkout this [cheat sheet](https://github.c
 
 ## Installation
 
-1. `git clone http://github.com/luan/vimfiles.git ~/.vim`
+1. `git clone http://github.com/phanle/vimfiles.git ~/.vim`
 1. `~/.vim/install` [more...](#install-script)
 1. Enjoy
 
